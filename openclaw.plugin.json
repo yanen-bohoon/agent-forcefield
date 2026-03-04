@@ -1,0 +1,17 @@
+{
+  "id": "forcefield",
+  "name": "Agent Forcefield",
+  "description": "Collect tool failures and user corrections into .learnings/ERRORS.md",
+  "version": "0.1.0",
+  "main": "./dist/index.js",
+  "hooks": [
+    "tool_result_persist",
+    "agent_end"
+  ],
+  "commands": [
+    {
+      "name": "forcefield",
+      "description": "Forcefield error collection commands"
+    }
+  ]
+}
